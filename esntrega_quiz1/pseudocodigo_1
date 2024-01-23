@@ -1,0 +1,25 @@
+nombre = juan david sanchez 
+
+1. b) Imprime los números del 1 al 10.
+
+2. b) 110
+
+3. c) Mientras
+
+4. c) Los divisores de 6.
+
+5. a) 54321
+
+inicio del problema planteamento de la solucion:
+
+algoritmo para registro y calcular el promedio de n edades
+
+el programa requiere de dos funciones 
+    calcular el promedio de edad
+    mostrar la edad mayor de un conjunto de edades n 
+
+el usuario debe poder registrar n cantidad de edades hasta que digite un numero negativo
+
+
+segun para lo que escoja el cliente debera hacer una cosa u otra, mostrar el promedio de edades o el mayor segun la edad
+
