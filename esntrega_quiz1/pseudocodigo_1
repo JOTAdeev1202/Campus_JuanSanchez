@@ -23,3 +23,43 @@ el usuario debe poder registrar n cantidad de edades hasta que digite un numero 
 
 segun para lo que escoja el cliente debera hacer una cosa u otra, mostrar el promedio de edades o el mayor segun la edad
 
+Algoritmo quiz1_codigo
+	
+	Escribir 'bienvenido a su programa para calcular un promedio de edades:'
+	
+	Escribir 'digite una edad: '
+	Leer edadAnterior
+	si edadAnterior > 0 Entonces
+		Escribir 'digite una edad: '
+		Leer edadNueva
+		Mientras (edadNueva > 0) Hacer
+			
+			Escribir 'digite otra edad: '
+			Leer edadNueva
+		FinMientras
+	FinSi
+	totalEdades = edadAnterior + edadNueva
+	Escribir 'digite la opcion segun lo que desee realizar: '
+	Escribir 'digite 1 para ver el promedio de edades.'
+	Escribir 'digite 2 para ver la edad mayor ingresada: '
+	leer opcionDigitada
+	segun opcionDigitada Hacer
+		1:
+			Escribir 'el promedio de edades es: '
+			promedioEdades = edadNueva + edadAnterior / totalEdades
+			Mostrar promedioEdades
+		2:
+		Escribir 'la edad mayor entre las digitadas es: '
+		
+		si edadNueva > edadAnterior Entonces
+			Mostrar edadNueva
+		SiNo
+			Mostrar edadAnterior
+		FinSi
+		
+		De Otro Modo:
+		Escribir 'ERROR. digite una opcion valida:'
+		leer opcionDigitada
+FinSegun
+
+FinAlgoritmo
