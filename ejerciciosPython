@@ -1,0 +1,77 @@
+'''
+Verificación de Edad:
+Pregunta a una persona su edad y utiliza una declaración if para determinar si es mayor de 18 años y puede votar.
+
+Clasificación de Notas:
+Pide una calificación numérica y utiliza condicionales elif para asignar una calificación en letras, como A, B, C o D.
+
+Decisión de Comida:
+Permítele a alguien elegir un tipo de comida y utiliza condicionales if para recomendar un restaurante según la elección (por ejemplo, comida italiana, mexicana o china).
+
+Verificación de Contraseña:
+Solicita una contraseña y utiliza una declaración if para verificar si coincide con una contraseña predefinida antes de permitir el acceso.
+
+Verificación de Palíndromo:
+Pide a alguien que ingrese una palabra y utiliza condicionales para determinar si es un palíndromo, es decir, si se lee igual de izquierda a derecha y de derecha a izquierda.
+'''
+#primer ejercicio
+print('Bienvenido')
+edad = int(input('digite su edad: '))
+
+if edad > 18 :
+    print('has alcanzado la mayoria de edad y eres apto para votar')
+else:
+    print('losentimos no has alcanzado la mayoria de edad por lo tanto no puedes votar')
+
+#segundo ejercicio
+
+nota = int(input('digite una nota'))
+
+
+if nota <= 20 :
+    print('lo siento tu nota es D')
+elif nota <=50:
+    print('su nota es menor a 50 por lo tanto tienes nota C')
+elif nota <= 70:
+    print('su nota esta por encima de 70 por tanto tu nota es B')
+else: 
+    print('felicidades su nota es mayor a 90 por lo tanto es A')
+
+# tercer ejercicio
+#recomendacion comida segun el gusto del cliente
+
+seleccionComida = input('digite la la comida de su preferencia : ')
+
+perro = 'perro'
+pastas = 'pastas'
+sancocho = 'sancocho'
+
+if seleccionComida == perro:
+    print('te recomiendo un restaurante de comida Americana')
+elif seleccionComida == pastas :
+    print('te recomiendo un restaurante italiano')
+elif seleccionComida == sancocho:
+    print('te recomiendo un restaurante de comida colombiana')
+else:
+    print('Losiento, no te puedo recomendar un restaurante especifico para la comida que me indicas.')
+
+# cuarto ejercicio
+
+contraseña = 'juan01234'
+
+comparacion = input('digite la contraseña: ')
+
+if contraseña == comparacion:
+    print('bienvenido, acceso correcto')
+else:
+    print('ERROR. la clave no es correcta.')
+    comparacion = input('digite la contraseña: ')
+
+# quinto ejercicio
+    
+variableIngresada = input('digite una palabra para compararla y decir si es palindromo ')
+
+if variableIngresada == variableIngresada[::-1]:
+    print('exitos es palindromo')
+else: 
+    print('no es palindroma')
